@@ -1,13 +1,35 @@
 @bodyfont: 'Open Sans';
+@bodycolor: #2E2F22;
 @headerfont: 'Spectral SC';
 
+@font-face {
+  font-family: 'Spectral SC';
+  src: url('/fonts/Spectral.ttf');
+}
 h2 {
   font-family: @headerfont;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  color: #2E2F22;
 }
 header, footer, section, body {
   margin: 0;
   padding: 0;
+  font-style: normal;
+  font-weight: normal;
   font-family: @bodyfont;
+  color: @bodycolor;
+}
+button {
+  border: 1px solid #202117;
+  box-sizing: border-box;
+  border-radius: 10px;
+  font-size: 16px;
+  background: transparent;
+  padding: 9px 25px;
+  display: block;
+  margin: 0 auto;
 }
 .wrapper {
   width: 80%;
@@ -17,8 +39,9 @@ header, footer, section, body {
   width: 100vw;
   height: 100vh;
   background-image: url('/images/header.jpg');
+  background-size: cover;
+  padding-top: 30px;
   &__topline {
-    padding-top: 30px;
   }
   &__logo {
   }
@@ -36,10 +59,14 @@ header, footer, section, body {
       line-height: 25px;
       color: #2E2F22;
       text-decoration: none;
+      &:hover {
+        color: #df56ab;
+      }
     }
   }
 }
 .articles {
+  padding: 30px 0;
   &__box {
     display: flex;
     flex-wrap: wrap;
@@ -47,16 +74,88 @@ header, footer, section, body {
   }
   &__post {
     margin: 10px;
+    width: 31%;
     &-img {
       width: 335px;
       height: 268px;
     }
+    &-title {
+      font-family: @headerfont;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 18px;
+      margin: 10px 0;
+    }
+    &-cat, &-date, &-desc, &-status {
+      font-size: 16px;
+      margin:  10px 0;
+      padding: 0;
+    }
+    &-date {
+      float: right;
+    }
+    &-cat {
+      float: left;
+    }
   }
   &__postlg {
     margin: 10px;
+    position: relative;
     &-img {
       width: 510px;
       height: 268px;
+    }
+    &-info {
+      position: absolute;
+      color: #ffffff;
+      top: 120px;
+      left: 55px;
+      width: 340px;
+    }
+    &-title {
+      font-size: 20px;
+      margin:  10px 0;
+      padding: 0;
+    }
+    &-cat, &-date, &-status, &-desc {
+      font-size: 16px;
+      margin:  10px 0;
+      padding: 0;
+    }
+    &-date {
+      float: right;
+    }
+    &-cat {
+      float: left;
+    }
+  }
+  &__controls {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 0;
+  }
+}
+.about {
+  padding: 30px 0;
+  &__box {
+    display: flex;
+  }
+  &__info {
+    padding: 15px;
+    &-post {
+      margin: 15px;
+      font-size: 16px;
+      color: #2E2F22;
+      text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+    &-quote {
+      padding: 15px;
+      height: 155px;
+      border-left: 1px solid #2E2F22;
+      font-style: italic;
+      font-weight: normal;
+      font-size: 30px;
+      color: #2E2F22;
     }
   }
 }
