@@ -1,0 +1,35 @@
+{
+  "name": "iv2blog",
+  "version": "0.1.0",
+  "description": "Верстка макета марафона htmlacademy.ru",
+  "main": "index.js",
+  "scripts": {
+    "start": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IvanShavliuga/iv2blog.git"
+  },
+  "keywords": [
+    "htmlacademy",
+    "portfolio",
+    "webpack",
+    "less"
+  ],
+  "author": "iv2 <iva.drakon.nov@gmail.com, ivanov-ROM-88@yandex.by> (Ivan Ivanov-Shavliuga)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/IvanShavliuga/iv2blog/issues"
+  },
+  "homepage": "https://github.com/IvanShavliuga/iv2blog#readme",
+  "devDependencies": {
+    "@babel/core": "^7.10.2",
+    "@babel/preset-env": "^7.10.2",
+    "autoprefixer": "^9.8.0",
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-replace": "^1.0.0"
+  }
+}
