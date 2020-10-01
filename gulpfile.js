@@ -1,8 +1,11 @@
 const gulp = require('gulp');
+const path = require('path');
 const babel = require('gulp-babel');
 const htmlmin = require('gulp-htmlmin');
 const sync = require('browser-sync');
 const replace = require('gulp-replace');
+const less = require('gulp-less');
+
 // HTML
 
 const html = () => {
@@ -17,7 +20,10 @@ const html = () => {
 
 exports.html = html;
 const styles = () => {
-    return gulp.src('src/styles/index.css')
+    return gulp.src('src/styles/**/*.less')
+        .pipe(less({
+          paths: [ path.join(__dirname, 'less', 'includes') ]
+        }))
         .pipe(replace(/\.\.\//g, ''))
         .pipe(gulp.dest('dist'))
         .pipe(sync.stream());
