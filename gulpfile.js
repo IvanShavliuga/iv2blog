@@ -93,7 +93,7 @@ exports.server = server;
 
 const watch = () => {
     gulp.watch('src/*.html', gulp.series(html, paths));
-    gulp.watch('src/styles/**/*.css', gulp.series(styles));
+    gulp.watch('src/styles/**/*.less', gulp.series(styles));
     gulp.watch('src/scripts/**/*.js', gulp.series(scripts));
     gulp.watch([
         'src/fonts/**/*',

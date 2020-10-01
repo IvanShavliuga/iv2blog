@@ -6,8 +6,140 @@
     <link rel="stylesheet" href="styles/index.css">
   </head>
   <body>
-    <h1>Success</h1>
-    <p>123hyyghgtty start</p>
+    <header class="header">
+      <div class="wrapper">
+        <nav class="header__topline">
+          <img class="header__logo" src="/images/logo.png"></img>
+          <ul class="header__nav">
+            <li class="header__nav-item">
+              <a href="" class="header__nav-link">
+                Статьи
+              </a></li>
+            <li class="header__nav-item">
+              <a href="" class="header__nav-link">
+                Обо мне
+              </a></li>
+            <li class="header__nav-item">
+              <a href="" class="header__nav-link">
+                Портфолио
+              </a></li>
+            <li class="header__nav-item">
+              <a href="" class="header__nav-link">
+                Написать мне
+              </a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <section class="articles">
+      <div class="wrapper">
+        <h2 class="articles__header">Все статьи</h1>
+        <div class="articles__box">
+          <article class="articles__post">
+            <img class="articles__post-img" src="/images/article_1.jpg"/>
+            <h3 class="articles__post-title"></h3>
+            <p class="articles__post-desc"></p>
+            <p class="articles__post-status">
+              <span class="articles__post-cat"></span>
+              <span class="articles__post-date"></span>
+            </p>
+          </article>
+          <article class="articles__post">
+            <img class="articles__post-img" src="/images/article_2.jpg"/>
+            <h3 class="articles__post-title"></h3>
+            <p class="articles__post-desc"></p>
+            <p class="articles__post-status">
+              <span class="articles__post-cat"></span>
+              <span class="articles__post-date"></span>
+            </p>
+          </article>
+          <article class="articles__post">
+            <img class="articles__post-img" src="/images/article_3.jpg"/>
+            <h3 class="articles__post-title"></h3>
+            <p class="articles__post-desc"></p>
+            <p class="articles__post-status">
+              <span class="articles__post-cat"></span>
+              <span class="articles__post-date"></span>
+            </p>
+          </article>
+          <article class="articles__postlg">
+            <img class="articles__postlg-img" src="/images/article_4.jpg"/>
+            <h3 class="articles__postlg-title"></h3>
+            <p class="articles__postlg-desc"></p>
+            <p class="articles__postlg-status">
+              <span class="articles__postlg-cat"></span>
+              <span class="articles__postlg-date"></span>
+            </p>
+          </article>
+          <article class="articles__postlg">
+            <img class="articles__postlg-img" src="/images/article_5.jpg"/>
+            <h3 class="articles__postlg-title"></h3>
+            <p class="articles__postlg-desc"></p>
+            <p class="articles__postlg-status">
+              <span class="articles__postlg-cat"></span>
+              <span class="articles__postlg-date"></span>
+            </p>
+          </article>
+        </div>
+        <button class="articles__button">Показать ещё</button>
+      </div>
+    </section>
+    <section class="about">
+      <div class="wrapper">
+        <h2 class="about__header">Обо мне</h2>
+        <div class="about__box">
+          <img class="about__photo" src="article_6"/>
+          <article class="about__info">
+            <p class="about__info-post"></p>
+            <p class="about__info-quote"></p>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section class="portfolio">
+      <div class="wrapper">
+        <h2 class="portfolio__header">Портфолио</h2>
+        <div class="portfolio__box">
+          <article class="portfolio__box-post">
+            <h3 class="portfolio__box-title"></h3>
+            <p class="portfolio__box-subtitle"></p>
+            <p class="portfolio__box-desc"></p>
+          </article>
+          <article class="portfolio__box-post">
+            <h3 class="portfolio__box-title"></h3>
+            <p class="portfolio__box-subtitle"></p>
+            <p class="portfolio__box-desc"></p>
+          </article>
+          <article class="portfolio__box-post">
+            <h3 class="portfolio__box-title"></h3>
+            <p class="portfolio__box-subtitle"></p>
+            <p class="portfolio__box-desc"></p>
+          </article>
+        </div>
+        <button class="portfolio__button">Показать ещё</button>
+      </div>
+    </section>
+    <section class="form">
+      <div class="wrapper">
+        <h2 class="form__header">Написать мне</h2>
+        <form class="form__box">
+          <input class="form__box-input" type="text"></input>
+          <input class="form__box-input" type="email"></input>
+          <textarea class="form__box-area"></textarea>
+          <button class="form__box-button">Отправить</button>
+        </form>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="wrapper">
+        <p class="footer__line">
+          <span class="footer__line link">вк</span>
+          <span class="footer__line link">телеграм</span>
+          <span class="footer__line link">инстаграм</span>
+          <span class="footer__line link">твиттер</span>
+        </p>
+      </div>
+    </footer>
     <script src="scripts/index.js"></script>
   </body>
 </html>
